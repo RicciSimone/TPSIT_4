@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package areaperimetrorettangolo;
+ import java.util.Scanner;
+/**
+ *
+ * @author Studente
+ */
+public class AreaPerimetroRettangolo {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int base;
+    System.out.println("inserisci la base maggiore di 0");
+    do{
+        base = input.nextInt();
+    }
+    while(base<=0);
+    System.out.println("inserisci la altezza maggiore di 0");
+    int altezza;
+    do{
+      altezza = input.nextInt();
+    }
+    while(altezza<=0);
+    int area=base*altezza;
+    System.out.println("area"+area);
+    int perimetro =(base+altezza)*2;
+    System.out.println("perimetro"+perimetro);
+    }
+    
+}
